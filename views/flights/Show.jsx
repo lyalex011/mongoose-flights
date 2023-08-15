@@ -60,7 +60,7 @@ export default function Show({flight}) {
 
             <label htmlFor="airports">Choose an Airport Destination: </label>
             <div className="box">
-            <select name="airport" id="airports">
+            <select name="airport" id="airports" required>
                 {destinationArray.map((dest) => <option value={dest}>{dest}</option>)}
             </select> <br />
             </div>
